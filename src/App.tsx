@@ -1,10 +1,8 @@
-
+import SideNav from "./components/SideNav"
 
 const App = () => {
   return (
-    <div className="">
-      <h1>hello health</h1>
-    </div>
+    <SideNav />
   )
 }
 
