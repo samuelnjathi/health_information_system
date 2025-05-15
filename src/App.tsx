@@ -3,6 +3,7 @@ import Dashboard from "./pages/Dashboard"
 import Clients from "./pages/Clients"
 import HealthPrograms from "./pages/HealthPrograms"
 import Layout from "./components/Layout"
+import RegisterClientForm from "./features/RegisterClientForm"
 
 
 const App = () => {
@@ -21,7 +22,7 @@ const App = () => {
 
               <Route path="client">
                   <Route index element={<Clients />} />
-
+                  <Route path="register-client" element={<RegisterClientForm />} />
               </Route>
             
             </Route>
