@@ -3,7 +3,7 @@ import Dashboard from "./pages/Dashboard"
 import Clients from "./pages/Clients"
 import HealthPrograms from "./pages/HealthPrograms"
 import Layout from "./components/Layout"
-import RegisterClientForm from "./features/RegisterClientForm"
+import RegisterClientForm from "./features/clients/RegisterClientForm"
 
 
 const App = () => {

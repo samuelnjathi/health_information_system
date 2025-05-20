@@ -1,0 +1,61 @@
+{
+    "clients": [
+      {
+        "id": "c001",
+        "fullName": "Jane Doe",
+        "dateOfBirth": "1985-07-12",
+        "gender": "Female",
+        "contactInfo": {
+          "phone": "0712345678",
+          "email": "jane.doe@example.com",
+          "address": "123 Mombasa Road, Nairobi"
+        },
+        "enrolledPrograms": [
+          {
+            "programId": "p001",
+            "enrollmentDate": "2025-05-01"
+          },
+          {
+            "programId": "p002",
+            "enrollmentDate": "2025-05-10"
+          }
+        ]
+      },
+      {
+        "id": "c002",
+        "fullName": "John Smith",
+        "dateOfBirth": "1990-03-22",
+        "gender": "Male",
+        "contactInfo": {
+          "phone": "0798765432",
+          "email": "john.smith@example.com",
+          "address": "456 Moi Avenue, Mombasa"
+        },
+        "enrolledPrograms": [
+          {
+            "programId": "p001",
+            "enrollmentDate": "2025-04-28"
+          }
+        ]
+      }
+    ],
+  
+    "programs": [
+      {
+        "id": "p001",
+        "name": "Tuberculosis (TB) Treatment Program",
+        "description": "This program offers diagnosis, medication, and counseling for TB patients."
+      },
+      {
+        "id": "p002",
+        "name": "Malaria Prevention Campaign",
+        "description": "Focuses on malaria education, mosquito net distribution, and treatment."
+      },
+      {
+        "id": "p003",
+        "name": "HIV Care and Support",
+        "description": "Provides antiretroviral therapy (ART) and routine check-ups for HIV-positive clients."
+      }
+    ]
+  }
+  
