@@ -1,8 +1,9 @@
 import { useState } from "react"
 import axios from "axios";
-
+import { useNavigate } from "react-router-dom";
 
 const RegisterClientForm = () => {
+    const navigate = useNavigate();
     const [client, setClient] = useState({
         firstName: '',
         lastName: '',
@@ -36,7 +37,8 @@ const RegisterClientForm = () => {
             
         }
         try {
-            await axios.post('http://localhost:3001/clients', newClient)
+            await axios.post('http://localhost:3001/clients', newClient);
+            navigate('/client')
         } catch (error) {
             console.error('Error storing data to json server' ,error)
         }
@@ -144,7 +146,7 @@ const RegisterClientForm = () => {
                 <option value="program3">Program 3</option>
             </select>   
         </div> */}
-        <button type="submit" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Submit</button>        
+        <button type="submit" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded cursor-pointer">Submit</button>        
     </form>
     </div>
   )

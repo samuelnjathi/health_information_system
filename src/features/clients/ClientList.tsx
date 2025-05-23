@@ -1,5 +1,8 @@
 import { useEffect, useState } from "react"
-
+import VisibilityIcon from '@mui/icons-material/Visibility';
+import EditSquareIcon from '@mui/icons-material/EditSquare';
+import DeleteIcon from '@mui/icons-material/Delete';
+import { Link } from "react-router-dom";
 
 type Client = {
     id: number;
@@ -37,6 +40,7 @@ const ClientList = () => {
                     <th className="border border-gray-300 px-4 py-2">Phone</th>
                     <th className="border border-gray-300 px-4 py-2">Email</th>
                     <th className="border border-gray-300 px-4 py-2">Address</th>
+                    <th className="border border-gray-300 px-4 py-2">Action</th>
                 </tr>
             </thead>
             <tbody>
@@ -46,34 +50,22 @@ const ClientList = () => {
                         <td className="border border-gray-300 px-4 py-2">{client.gender}</td>
                         <td className="border border-gray-300 px-4 py-2">{client.dateOfBirth}</td>
                         <td className="border border-gray-300 px-4 py-2">{client.contactInfo.phone}</td>
-                        <td className="border border-gray-300 px-4 py-2">{client.contactInfo.email}</td>
+                        <td className="border border-gray-300 px-4 py-2">{client.contactInfo.email.substring(0, 15)}...</td>
                         <td className="border border-gray-300 px-4 py-2">{client.contactInfo.address}</td>
+                        <td className="border border-gray-300 px-4 py-2">
+                            <Link  to="#">
+                                <VisibilityIcon className="text-blue-500" fontSize="small" />
+                            </Link>
+                            <Link to="#">
+                                <EditSquareIcon className="text-green-500" fontSize="small" />
+                            </Link>
+                            <DeleteIcon className="text-red-600 cursor-pointer" fontSize="small" />
+                        </td>
                     </tr>
                 ))}
             </tbody>
         </table>
       </div>
-
-
-
-
-
-
-
-    // <table key={client.id} className="">    
-    //             <tr>
-    //               <th>Full Name</th>
-    //               <th>Gender</th>
-    //               <th>Phone</th>
-    //               <th>Email</th>
-    //             </tr>
-    //             <tr>
-    //               <td>{client.fullName}</td>
-    //               <td>{client.gender}</td>
-    //               <td>{client.contactInfo.phone}</td>
-    //               <td>{client.contactInfo.email}</td>
-    //             </tr>
-    // </table>
   )
 }
 

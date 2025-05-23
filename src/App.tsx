@@ -4,6 +4,7 @@ import Clients from "./pages/Clients"
 import HealthPrograms from "./pages/HealthPrograms"
 import Layout from "./components/Layout"
 import RegisterClientForm from "./features/clients/RegisterClientForm"
+import CreateProgramForm from "./features/programs/CreateProgramForm"
 
 
 const App = () => {
@@ -17,6 +18,7 @@ const App = () => {
 
               <Route path="program">
                 <Route index element={<HealthPrograms />} />
+                <Route path="create-program" element={<CreateProgramForm />} />
 
               </Route>
 

@@ -44,12 +44,24 @@
       "id": "6e21",
       "firstName": "Samuel",
       "lastName": "Njathi",
-      "gender": "male",
+      "gender": "Male",
       "dateOfBirth": "2000-12-31",
       "contactInfo": {
         "phone": "0759067008",
         "email": "samuelnjathi85@gmail.com",
         "address": "30"
+      }
+    },
+    {
+      "id": "08b3",
+      "firstName": "Godwin",
+      "lastName": "Mwita",
+      "gender": "Male",
+      "dateOfBirth": "1999-07-06",
+      "contactInfo": {
+        "phone": "0745179633",
+        "email": "godwin1998ibrahim@gmail.com",
+        "address": "1359,Tudor Mombasa"
       }
     }
   ],
@@ -68,6 +80,11 @@
       "id": "p003",
       "name": "HIV Care and Support",
       "description": "Provides antiretroviral therapy (ART) and routine check-ups for HIV-positive clients."
+    },
+    {
+      "id": "279c",
+      "name": "Cholera",
+      "description": "An infectious disease that causes severe watery diarrhea, which can lead to dehydration and death if it is severe and left untreated."
     }
   ]
 }
